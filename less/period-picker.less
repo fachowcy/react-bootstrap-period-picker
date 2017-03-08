@@ -1,0 +1,116 @@
+.dropdown-menu-period-picker {
+  nav a {
+	cursor: pointer;
+  }
+}
+
+.sidebar-period-picker {
+  background: rgba(214, 221, 233, 0.5);
+  border-right: solid 1px #CFCFCF;
+  padding: 15px;
+
+  .sidebar-nav>li>a:hover, .sidebar-default .sidebar-nav>li.active>a:hover {
+	background: rgba(0, 0, 0, 0.3);
+  }
+
+  .sidebar-nav>li {
+	margin: 0;
+  }
+
+  .sidebar-nav>.active>a, .sidebar-default .sidebar-nav>.active>a:focus {
+	background: rgba(204, 211, 223, 1);
+  }
+
+  .sidebar-nav>li>a {
+	color: rgba(55, 55, 50, 1);
+  }
+}
+
+@media (min-width: @screen-sm-min) {
+  .dropdown-menu-period-picker {
+	width: 508px
+  }
+
+  .dropdown-menu-period-picker-sidebar {
+	width: 231px;
+	margin-top: -5px;
+	margin-bottom: -5px;
+	.sidebar-period-picker;
+	padding: 0;
+	position: absolute;
+	left: 0;
+	top: 5px;
+	bottom: 5px;
+  }
+
+  .dropdown-menu-period-picker-content {
+	margin-left: 231px;
+	padding: 0 15px 50px;
+  }
+
+  .period-picker-calendar {
+	display: inline-block;
+	margin-right: 15px;
+	margin-top: 0;
+  }
+
+  .period-picker-calendar:last-child {
+	margin-right: 0;
+  }
+
+  .period-picker-calendar-last {
+	display: none;
+  }
+
+  .period-picker-summary {
+	display: none;
+  }
+}
+
+@media (min-width: @screen-md-min) {
+  .dropdown-menu-period-picker {
+	width: 768px;
+
+	.period-picker-summary {
+	  display: block;
+	  position: absolute;
+	  left: 231px;
+	  bottom: 0;
+	  padding: 12px;
+	  font-size: 0.95em;
+	  span { display: inline-block; margin: 0 0.8em; }
+	  span:last-child { margin-right: 0; }
+	  max-width: 500px;
+	}
+
+	.period-picker-control-buttons {
+	  position: absolute;
+	  right: 0;
+	  bottom: 0;
+	  padding: 15px;
+
+	  button { margin-left: 5px !important; }
+	}
+
+	.period-picker-calendar-last {
+	  display: inline-block;
+	}
+
+	.period-picker-calendar-last .ts-calendar-next-month-btn { display: none; }
+	.period-picker-calendar-this .ts-calendar-prev-month-btn { display: none; }
+  }
+}
+
+/**
+ * Normal dropdown on xs-small screens
+ */
+@media (max-width: @screen-xs-max) {
+  .dropdown-menu-period-picker-sidebar {
+	margin: 0;
+	padding: 0;
+  }
+
+  .dropdown-menu-period-picker .sidebar-nav>li>a {
+	color: rgba(55, 55, 50, 1);
+  }
+}

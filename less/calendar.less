@@ -1,0 +1,90 @@
+@calendar-day-width: 35px;
+@calendar-day-height: 28px;
+@calendar-font-size: 13px;
+@calendar-day-border-radius: 4px;
+
+.ts-calendar {
+  margin: 1em 0;
+  font-size: @calendar-font-size;
+  font-family: Arial, "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans-serif;
+  // 7 days in week
+  width: 7 * @calendar-day-width;
+
+  .ts-calendar-header {
+	font-weight: bold;
+	text-align: center;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 0.5em;
+
+	span { flex: 1 1 auto; }
+	button { flex: 0 0 auto; }
+  }
+
+  table {
+	border: 0 none;
+	font-size: @calendar-font-size;
+  }
+
+  table thead tr {
+	border-bottom: solid 1px @table-border-color;
+  }
+
+  table thead tr th {
+	text-align: center;
+	font-weight: normal;
+	font-size: 0.85em;
+	color: #999999;
+	padding-bottom: 0.4em;
+  }
+
+  table tbody tr td {
+	width: @calendar-day-width;
+	height: @calendar-day-height;
+	padding: 1px 0px;
+	font-weight: 400;
+
+	.ts-calendar-day {
+	  width: 100%;
+	  height: 100%;
+	  cursor: pointer;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	}
+
+	.ts-calendar-day-today {
+	  background: #CCCCCC;
+	}
+
+	.ts-calendar-day-disabled {
+	  cursor: not-allowed;
+	  color: #DDDDDD;
+	}
+
+	.ts-calendar-day-selected {
+	  background: rgba(63, 199, 250, 0.9);
+	}
+
+	.ts-calendar-day-selected-first {
+	  border-top-left-radius: @calendar-day-border-radius;
+	  border-bottom-left-radius: @calendar-day-border-radius;
+	}
+
+	.ts-calendar-day-selected-last {
+	  border-top-right-radius: @calendar-day-border-radius;
+	  border-bottom-right-radius: @calendar-day-border-radius;
+	}
+
+	.ts-calendar-day-in-range {
+	  background: rgba(63, 199, 250, 0.3);
+	  border-radius: 0;
+	}
+  }
+
+  table tbody tr.break td {
+	height: @calendar-day-height/3;
+  }
+}
