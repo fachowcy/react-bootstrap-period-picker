@@ -20,5 +20,17 @@
   "bugs": {
     "url": "https://github.com/fachowcy/react-period-picker/issues"
   },
-  "homepage": "https://github.com/fachowcy/react-period-picker#readme"
+  "homepage": "https://github.com/fachowcy/react-period-picker#readme",
+  "dependencies": {
+    "@types/classnames": "^0.0.32",
+    "@types/react": "^15.0.14",
+    "@types/react-bootstrap": "^0.0.46",
+    "@types/underscore": "^1.7.36",
+    "classnames": "^2.2.5",
+    "moment": "^2.17.1",
+    "react": "^15.4.2",
+    "react-bootstrap": "^0.30.8",
+    "react-dom": "^15.4.2",
+    "underscore": "^1.8.3"
+  }
 }
