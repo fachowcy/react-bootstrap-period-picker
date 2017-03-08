@@ -1,5 +1,5 @@
 {
-  "name": "react-period-picker",
+  "name": "react-bootstrap-period-picker",
   "version": "0.1.2",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fachowcy/react-period-picker.git"
+    "url": "git+https://github.com/fachowcy/react-bootstrap-period-picker.git"
   },
   "keywords": [
     "react",
@@ -18,9 +18,9 @@
   "author": "Patryk Kozłowski <patryk.kozlowski@fachowcy.pl>",
   "license": "proprietary",
   "bugs": {
-    "url": "https://github.com/fachowcy/react-period-picker/issues"
+    "url": "https://github.com/fachowcy/react-bootstrap-period-picker/issues"
   },
-  "homepage": "https://github.com/fachowcy/react-period-picker#readme",
+  "homepage": "https://github.com/fachowcy/react-bootstrap-period-picker#readme",
   "dependencies": {
     "@types/classnames": "^0.0.32",
     "@types/react": "^15.0.14",
