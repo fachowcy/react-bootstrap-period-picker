@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "es6",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "jsx": "react",
+    "experimentalDecorators": false,
+    "lib": [ "es5", "dom" ]
+  },
+  "exclude": [ "node_modules" ],
+  "include": [ "src/**/*" ]
+}
